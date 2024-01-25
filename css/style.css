@@ -1,0 +1,182 @@
+.w3-containers {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card {
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.cover-pic {
+  display: block;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 140px;
+  border-radius: 50%;
+  margin-top: -70px;
+  box-shadow: 0 0 0 5px blue;
+  transition: box-shadow 0.5s;
+}
+
+.profile-pic:hover {
+  box-shadow: 0 0 0 5px blue;
+}
+
+.profile-card h1 {
+  font-weight: 600;
+}
+
+.follow-btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid blue;
+  color: white;
+  padding: 6px 35px;
+  margin: 25px 0;
+}
+
+.container {
+  /* background: linear-gradient(45deg, blueviolet, lightgreen); */
+  padding: 15px 9%;
+  padding-bottom: 100px;
+}
+
+.container .heading {
+  text-align: center;
+  padding-bottom: 15px;
+  color: white;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+}
+
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+
+.container .box-container .boxx {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: black;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.container .box-container .boxx img {
+  height: 80px;
+}
+
+.container .box-container .boxx h3 {
+  color: white;
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.container .box-container .boxx p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.container .box-container .boxx:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+.w3-containerss {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.w3-containerss .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.w3-containerss .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.w3-containerss .box .dream img {
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* Style inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #3533cd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #353435;
+}
+
+/* Style the container/contact section */
+.contact-container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
